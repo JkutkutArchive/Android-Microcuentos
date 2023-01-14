@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Microstories</string>
+    <string name="label_login_introduction">Bienvenido! Introduce tu nombre para comenzar</string>
+    <string name="et_login_text">Introduce tu nombre</string>
+    <string name="btn_login">Empezar</string>
+    <string name="fap_icon_description">Cambiar mode noche/claro</string>
+    <string name="elige_cuento_title">Cuentos:</string>
+</resources>

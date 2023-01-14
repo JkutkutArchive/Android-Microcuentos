@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/activity_style"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtvTitulo"
+        style="@style/txtv_style.subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TODO" />
+
+
+    <TextView
+        android:id="@+id/txtvAvance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/txtv_style"
+        android:text="TODO" />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EligeCuentoActivity"
+    style="@style/activity_style">
+
+    <TextView
+        android:id="@+id/txtvTitle"
+        style="@style/txtv_style.subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/elige_cuento_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCuentos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/normal_margin"
+        app:layout_constraintBottom_toTopOf="@id/fabMode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtvTitle" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMode"
+        style="@style/floating_btn_style"
+        android:contentDescription="@string/fap_icon_description"
+        android:src="@drawable/ic_mode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
