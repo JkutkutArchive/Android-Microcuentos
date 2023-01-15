@@ -14,7 +14,6 @@ public class MainActivity extends CustomActivity implements View.OnClickListener
     public static final String KEY_NOMBRE = "nombre";
 
     private EditText etNombre;
-    private Button btnLogin;
 
     @SuppressLint("MissingSuperCall")
     @Override
@@ -22,16 +21,23 @@ public class MainActivity extends CustomActivity implements View.OnClickListener
         super.onCreate(savedInstanceState, R.layout.activity_main);
 
         etNombre = findViewById(R.id.etNombre);
-        btnLogin = findViewById(R.id.btnLogin);
-
+        Button btnLogin = findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        // TODO loggin logic
+        String user = etNombre.getText().toString().trim();
+        if (user.isEmpty()) {
+            etNombre.setError("Introduce tu nombre");
+            return;
+        }
+        if (user.length() < 3) {
+            etNombre.setError("El nombre debe tener al menos 3 caracteres");
+            return;
+        }
         Intent i = new Intent(this, EligeCuentoActivity.class);
-        i.putExtra(KEY_NOMBRE, etNombre.getText().toString());
+        i.putExtra(KEY_NOMBRE, user);
         startActivity(i);
         finish();
     }

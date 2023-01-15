@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Cuentos {
     public static ArrayList<Cuento> getCuentos() {
-        return new ArrayList<Cuento>(Arrays.asList(
+        return new ArrayList<>(Arrays.asList(
             new Cuento("El deseo del dinosaurio","Enfurecido, entristecido y hambriento...", "Enfurecido, entristecido y hambriento, porque el T-Rex le había robado la presa que había casado, %s el velociraptor, al ver una estrella fugaz surcar los cielos en dirección a la tierra,  deseó, lleno de odio, que el mundo se acabara y que todos se extinguieran."),
             new Cuento("Amores fugaces","Cuando se fue a la cama...","Cuando %s se fue a la cama, a pesar de haber tenido una día largo y complicado, recordó la efímera sonrisa que le dedicó aquel desconocido que se cruzó en su camino y, olvidándose de todo, se quedó dormido con una gran sonrisa en los labios."),
             new Cuento("El deseo de cumpleaños","Mientras le cantaban el cumpleaños...","Mientras le cantaban el cumpleaños, %s cerró fuertemente los ojos y se concentró en pedir su deseo con todas sus fuerzas y, cuando finalmente sopló las velitas, de la nada, se materializó un pony rosado que cayó sobre el pastel, salpicando a todos los presentes."),
